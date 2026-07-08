@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NihongoBenkyou</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f7f7f7;
+color:#222;
+transition:.3s;
+}
+
+header{
+background:#e53935;
+color:white;
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+button{
+padding:10px 16px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+footer{
+margin-top:50px;
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.dark{
+background:#1d1d1d;
+color:white;
+}
+
+.dark .card{
+background:#2b2b2b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🇯🇵 NihongoBenkyou</div>
+
+<button onclick="darkmode()">🌙 Mode</button>
+</header>
+
+<section class="hero">
+
+<h1>Belajar Bahasa Jepang Lebih Mudah</h1>
+
+<p>
+Hiragana • Katakana • Kosakata • Grammar • JLPT N5-N4 • Kuis
+</p>
+
+<button>Mulai Belajar</button>
+
+</section>
+
+<section class="menu">
+
+<div class="card">
+<h2>🇯🇵 Hiragana & Katakana</h2>
+<p>Belajar huruf Jepang dari nol.</p>
+</div>
+
+<div class="card">
+<h2>🌐 Kata-kata</h2>
+<p>Kata sifat, kata kerja, kata tanya, dll.</p>
+</div>
+
+<div class="card">
+<h2>📚 Kosakata</h2>
+<p>Ribuan kosakata Jepang.</p>
+</div>
+
+<div class="card">
+<h2>📝 Grammar</h2>
+<p>Minna no Nihongo & Irodori.</p>
+</div>
+
+<div class="card">
+<h2>🎯 Kuis</h2>
+<p>Latihan dan nilai otomatis.</p>
+</div>
+
+<div class="card">
+<h2>🔍 Kamus</h2>
+<p>Cari kosakata Jepang ↔ Indonesia.</p>
+</div>
+
+</section>
+
+<footer>
+
+By: <b>NihongoBenkyou</b><br>
+TikTok: <b>@whirltsu</b>
+
+</footer>
+
+<script>
+function darkmode(){
+document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+  </html>
